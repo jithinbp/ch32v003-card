@@ -31,11 +31,11 @@ Schematics originally based on [Christmas LED ball](https://www.hackster.io/fabi
 
 ## Author links
 
-[Jithin BP](https://github.com/jithinbp/)
-[CSpark Research](https://github.com/csparkresearch/)
++ [Jithin BP](https://github.com/jithinbp/)
++ [CSpark Research](https://github.com/csparkresearch/)
 
 ## Credits
 
-+ [Fábio Souza](https://github.com/FBSeletronica) for the CH32v003 layout .
-+ [CNLohr] (https://github.com/cnlohr/) for the many examples on [ch32v003fun](https://github.com/cnlohr/ch32v003fun) 
++ [Fábio Souza](https://github.com/FBSeletronica) for the CH32v003 layout for the LED christmas ball which served as a starting point for this work.
++ [CNLohr] (https://github.com/cnlohr/) for the many examples on [ch32v003fun](https://github.com/cnlohr/ch32v003fun) from where I lifted sections for H/W interrupts (for IR) , deep sleep mode and wakeup , and PWM . The datasheet was also of much help. :)
  
