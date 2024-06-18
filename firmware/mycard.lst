@@ -1,0 +1,1099 @@
+
+mycard.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .init:
+
+00000000 <InterruptVector>:
+void InterruptVector()         __attribute__((naked)) __attribute((section(".init"))) __attribute((weak,alias("InterruptVectorDefault")));
+void InterruptVectorDefault()  __attribute__((naked)) __attribute((section(".init")));
+
+void InterruptVectorDefault()
+{
+	asm volatile( "\n\
+   0:	3260006f          	j	326 <handle_reset>
+   4:	0000                	unimp
+   6:	0000                	unimp
+   8:	03a6                	slli	t2,t2,0x9
+   a:	0000                	unimp
+   c:	03a4                	addi	s1,sp,456
+	...
+  2e:	0000                	unimp
+  30:	03a4                	addi	s1,sp,456
+  32:	0000                	unimp
+  34:	0000                	unimp
+  36:	0000                	unimp
+  38:	03a4                	addi	s1,sp,456
+  3a:	0000                	unimp
+  3c:	0000                	unimp
+  3e:	0000                	unimp
+  40:	03a4                	addi	s1,sp,456
+  42:	0000                	unimp
+  44:	03a4                	addi	s1,sp,456
+  46:	0000                	unimp
+  48:	03a4                	addi	s1,sp,456
+  4a:	0000                	unimp
+  4c:	03a4                	addi	s1,sp,456
+  4e:	0000                	unimp
+  50:	0784                	addi	s1,sp,960
+  52:	0000                	unimp
+  54:	03a4                	addi	s1,sp,456
+  56:	0000                	unimp
+  58:	03a4                	addi	s1,sp,456
+  5a:	0000                	unimp
+  5c:	03a4                	addi	s1,sp,456
+  5e:	0000                	unimp
+  60:	03a4                	addi	s1,sp,456
+  62:	0000                	unimp
+  64:	03a4                	addi	s1,sp,456
+  66:	0000                	unimp
+  68:	03a4                	addi	s1,sp,456
+  6a:	0000                	unimp
+  6c:	03a4                	addi	s1,sp,456
+  6e:	0000                	unimp
+  70:	03a4                	addi	s1,sp,456
+  72:	0000                	unimp
+  74:	03a4                	addi	s1,sp,456
+  76:	0000                	unimp
+  78:	03a4                	addi	s1,sp,456
+  7a:	0000                	unimp
+  7c:	03a4                	addi	s1,sp,456
+  7e:	0000                	unimp
+  80:	03a4                	addi	s1,sp,456
+  82:	0000                	unimp
+  84:	03a4                	addi	s1,sp,456
+  86:	0000                	unimp
+  88:	03a4                	addi	s1,sp,456
+  8a:	0000                	unimp
+  8c:	03a4                	addi	s1,sp,456
+  8e:	0000                	unimp
+  90:	03a4                	addi	s1,sp,456
+  92:	0000                	unimp
+  94:	03a4                	addi	s1,sp,456
+  96:	0000                	unimp
+  98:	03a4                	addi	s1,sp,456
+  9a:	0000                	unimp
+  9c:	0000                	unimp
+	...
+
+Disassembly of section .text:
+
+000000a0 <__divsi3>:
+  a0:	02054e63          	bltz	a0,dc <__umodsi3+0x8>
+  a4:	0405c363          	bltz	a1,ea <__umodsi3+0x16>
+
+000000a8 <__hidden___udivsi3>:
+  a8:	862e                	mv	a2,a1
+  aa:	85aa                	mv	a1,a0
+  ac:	557d                	li	a0,-1
+  ae:	c215                	beqz	a2,d2 <__hidden___udivsi3+0x2a>
+  b0:	4685                	li	a3,1
+  b2:	00b67863          	bgeu	a2,a1,c2 <__hidden___udivsi3+0x1a>
+  b6:	00c05663          	blez	a2,c2 <__hidden___udivsi3+0x1a>
+  ba:	0606                	slli	a2,a2,0x1
+  bc:	0686                	slli	a3,a3,0x1
+  be:	feb66ce3          	bltu	a2,a1,b6 <__hidden___udivsi3+0xe>
+  c2:	4501                	li	a0,0
+  c4:	00c5e463          	bltu	a1,a2,cc <__hidden___udivsi3+0x24>
+  c8:	8d91                	sub	a1,a1,a2
+  ca:	8d55                	or	a0,a0,a3
+  cc:	8285                	srli	a3,a3,0x1
+  ce:	8205                	srli	a2,a2,0x1
+  d0:	faf5                	bnez	a3,c4 <__hidden___udivsi3+0x1c>
+  d2:	8082                	ret
+
+000000d4 <__umodsi3>:
+  d4:	8286                	mv	t0,ra
+  d6:	3fc9                	jal	a8 <__hidden___udivsi3>
+  d8:	852e                	mv	a0,a1
+  da:	8282                	jr	t0
+  dc:	40a00533          	neg	a0,a0
+  e0:	00b04763          	bgtz	a1,ee <__umodsi3+0x1a>
+  e4:	40b005b3          	neg	a1,a1
+  e8:	b7c1                	j	a8 <__hidden___udivsi3>
+  ea:	40b005b3          	neg	a1,a1
+  ee:	8286                	mv	t0,ra
+  f0:	3f65                	jal	a8 <__hidden___udivsi3>
+  f2:	40a00533          	neg	a0,a0
+  f6:	8282                	jr	t0
+
+000000f8 <__modsi3>:
+  f8:	8286                	mv	t0,ra
+  fa:	0005c763          	bltz	a1,108 <__modsi3+0x10>
+  fe:	00054963          	bltz	a0,110 <__modsi3+0x18>
+ 102:	375d                	jal	a8 <__hidden___udivsi3>
+ 104:	852e                	mv	a0,a1
+ 106:	8282                	jr	t0
+ 108:	40b005b3          	neg	a1,a1
+ 10c:	fe055be3          	bgez	a0,102 <__modsi3+0xa>
+ 110:	40a00533          	neg	a0,a0
+ 114:	3f51                	jal	a8 <__hidden___udivsi3>
+ 116:	40b00533          	neg	a0,a1
+ 11a:	8282                	jr	t0
+	...
+
+0000011e <SetupDebugPrintf>:
+}
+
+void SetupDebugPrintf()
+{
+	// Clear out the sending flag.
+	*DMDATA1 = 0x0;
+ 11e:	e00007b7          	lui	a5,0xe0000
+ 122:	0e07ac23          	sw	zero,248(a5) # e00000f8 <__global_pointer$+0xbffff8f8>
+	*DMDATA0 = 0x80;
+ 126:	08000713          	li	a4,128
+ 12a:	0ee7aa23          	sw	a4,244(a5)
+}
+ 12e:	8082                	ret
+
+00000130 <DelaySysTick>:
+#endif
+
+void DelaySysTick( uint32_t n )
+{
+#ifdef CH32V003
+	uint32_t targend = SysTick->CNT + n;
+ 130:	e000f7b7          	lui	a5,0xe000f
+ 134:	479c                	lw	a5,8(a5)
+	while( ((int32_t)( SysTick->CNT - targend )) < 0 );
+ 136:	e000f737          	lui	a4,0xe000f
+	uint32_t targend = SysTick->CNT + n;
+ 13a:	953e                	add	a0,a0,a5
+	while( ((int32_t)( SysTick->CNT - targend )) < 0 );
+ 13c:	471c                	lw	a5,8(a4)
+ 13e:	8f89                	sub	a5,a5,a0
+ 140:	fe07cee3          	bltz	a5,13c <DelaySysTick+0xc>
+	uint32_t targend = SysTick->CNTL + n;
+	while( ((int32_t)( SysTick->CNTL - targend )) < 0 );
+#else
+	#error DelaySysTick not defined.
+#endif
+}
+ 144:	8082                	ret
+
+00000146 <sectionoff>:
+}
+void section2(){
+			GPIOD->BCR |= 0b1100; GPIOD->BSHR |= 0b0100;
+}
+void sectionoff(){
+			GPIOC->BCR |= 0b11111111; // clear all L1-L7 as well
+ 146:	400117b7          	lui	a5,0x40011
+ 14a:	4bd8                	lw	a4,20(a5)
+ 14c:	0ff76713          	ori	a4,a4,255
+ 150:	cbd8                	sw	a4,20(a5)
+			GPIOD->BCR |= 0b1100;
+ 152:	4147a703          	lw	a4,1044(a5) # 40011414 <__global_pointer$+0x20010c14>
+ 156:	00c76713          	ori	a4,a4,12
+ 15a:	40e7aa23          	sw	a4,1044(a5)
+}
+ 15e:	8082                	ret
+
+00000160 <writeString>:
+    Delay_Ms(POV_DEL);
+   }
+    GPIOC->BCR = 0b11111111; // clear all
+}
+
+void writeString(char * s){
+ 160:	1141                	addi	sp,sp,-16
+ 162:	c422                	sw	s0,8(sp)
+ 164:	c606                	sw	ra,12(sp)
+ 166:	c226                	sw	s1,4(sp)
+ 168:	842a                	mv	s0,a0
+	while( (((GPIOD->INDR)>>5)&1) && TIM2->CNT<1000 ); // no contact. high
+ 16a:	40011637          	lui	a2,0x40011
+ 16e:	400006b7          	lui	a3,0x40000
+ 172:	3e700713          	li	a4,999
+ 176:	40862783          	lw	a5,1032(a2) # 40011408 <__global_pointer$+0x20010c08>
+ 17a:	0207f793          	andi	a5,a5,32
+ 17e:	c799                	beqz	a5,18c <writeString+0x2c>
+ 180:	0246d783          	lhu	a5,36(a3) # 40000024 <__global_pointer$+0x1ffff824>
+ 184:	07c2                	slli	a5,a5,0x10
+ 186:	83c1                	srli	a5,a5,0x10
+ 188:	fef777e3          	bgeu	a4,a5,176 <writeString+0x16>
+	while( !(((GPIOD->INDR)>>5)&1) && TIM2->CNT<1000 ); //contact. low
+ 18c:	40011637          	lui	a2,0x40011
+ 190:	400006b7          	lui	a3,0x40000
+ 194:	3e700713          	li	a4,999
+ 198:	40862783          	lw	a5,1032(a2) # 40011408 <__global_pointer$+0x20010c08>
+ 19c:	0207f793          	andi	a5,a5,32
+ 1a0:	e799                	bnez	a5,1ae <writeString+0x4e>
+ 1a2:	0246d783          	lhu	a5,36(a3) # 40000024 <__global_pointer$+0x1ffff824>
+ 1a6:	07c2                	slli	a5,a5,0x10
+ 1a8:	83c1                	srli	a5,a5,0x10
+ 1aa:	fef777e3          	bgeu	a4,a5,198 <writeString+0x38>
+	while( (((GPIOD->INDR)>>5)&1) && TIM2->CNT<1000 ); // no contact. high
+ 1ae:	40011637          	lui	a2,0x40011
+ 1b2:	400006b7          	lui	a3,0x40000
+ 1b6:	3e700713          	li	a4,999
+ 1ba:	40862783          	lw	a5,1032(a2) # 40011408 <__global_pointer$+0x20010c08>
+ 1be:	0207f793          	andi	a5,a5,32
+ 1c2:	c799                	beqz	a5,1d0 <writeString+0x70>
+ 1c4:	0246d783          	lhu	a5,36(a3) # 40000024 <__global_pointer$+0x1ffff824>
+ 1c8:	07c2                	slli	a5,a5,0x10
+ 1ca:	83c1                	srli	a5,a5,0x10
+ 1cc:	fef777e3          	bgeu	a4,a5,1ba <writeString+0x5a>
+    Delay_Ms(POV_DEL*2);
+ 1d0:	00023537          	lui	a0,0x23
+ 1d4:	28050513          	addi	a0,a0,640 # 23280 <mycard.c.e40acf93+0x21254>
+ 1d8:	3fa1                	jal	130 <DelaySysTick>
+	GPIOD->BCR |= 0b1100; GPIOD->BSHR |= 0b1000;
+ 1da:	400117b7          	lui	a5,0x40011
+ 1de:	4147a703          	lw	a4,1044(a5) # 40011414 <__global_pointer$+0x20010c14>
+    GPIOC->BSHR |= reverse( (letters[c][x]<<1)&0xFF) ; // set new
+ 1e2:	6305                	lui	t1,0x1
+	GPIOD->BCR |= 0b1100; GPIOD->BSHR |= 0b1000;
+ 1e4:	00c76713          	ori	a4,a4,12
+ 1e8:	40e7aa23          	sw	a4,1044(a5)
+ 1ec:	4107a703          	lw	a4,1040(a5)
+ 1f0:	00876713          	ori	a4,a4,8
+ 1f4:	40e7a823          	sw	a4,1040(a5)
+	while(*s != '\0'){
+ 1f8:	00044783          	lbu	a5,0(s0)
+ 1fc:	e791                	bnez	a5,208 <writeString+0xa8>
+		showchar(*s);
+		s++;
+	}
+}
+ 1fe:	40b2                	lw	ra,12(sp)
+ 200:	4422                	lw	s0,8(sp)
+ 202:	4492                	lw	s1,4(sp)
+ 204:	0141                	addi	sp,sp,16
+ 206:	8082                	ret
+ 208:	00179493          	slli	s1,a5,0x1
+ 20c:	94be                	add	s1,s1,a5
+ 20e:	0486                	slli	s1,s1,0x1
+	while(*s != '\0'){
+ 210:	4601                	li	a2,0
+    GPIOC->BSHR |= reverse( (letters[c][x]<<1)&0xFF) ; // set new
+ 212:	81830293          	addi	t0,t1,-2024 # 818 <letters>
+    GPIOC->BCR = 0b11111111; // clear all
+ 216:	400116b7          	lui	a3,0x40011
+ 21a:	0ff00593          	li	a1,255
+    GPIOC->BSHR |= reverse( (letters[c][x]<<1)&0xFF) ; // set new
+ 21e:	009607b3          	add	a5,a2,s1
+    GPIOC->BCR = 0b11111111; // clear all
+ 222:	cacc                	sw	a1,20(a3)
+    GPIOC->BSHR |= reverse( (letters[c][x]<<1)&0xFF) ; // set new
+ 224:	9796                	add	a5,a5,t0
+ 226:	0007c783          	lbu	a5,0(a5)
+   b = (b & 0xF0) >> 4 | (b & 0x0F) << 4;
+ 22a:	6505                	lui	a0,0x1
+ 22c:	1541                	addi	a0,a0,-16
+ 22e:	0037d713          	srli	a4,a5,0x3
+ 232:	0796                	slli	a5,a5,0x5
+ 234:	8fe9                	and	a5,a5,a0
+ 236:	8b3d                	andi	a4,a4,15
+ 238:	8f5d                	or	a4,a4,a5
+   b = (b & 0xCC) >> 2 | (b & 0x33) << 2;
+ 23a:	0ff77713          	andi	a4,a4,255
+ 23e:	40275793          	srai	a5,a4,0x2
+ 242:	0337f513          	andi	a0,a5,51
+ 246:	00271793          	slli	a5,a4,0x2
+ 24a:	08c7f793          	andi	a5,a5,140
+   b = (b & 0xAA) >> 1 | (b & 0x55) << 1;
+ 24e:	8fc9                	or	a5,a5,a0
+    GPIOC->BSHR |= reverse( (letters[c][x]<<1)&0xFF) ; // set new
+ 250:	4a98                	lw	a4,16(a3)
+   b = (b & 0xAA) >> 1 | (b & 0x55) << 1;
+ 252:	4017d513          	srai	a0,a5,0x1
+ 256:	0786                	slli	a5,a5,0x1
+ 258:	05557513          	andi	a0,a0,85
+ 25c:	02a7f793          	andi	a5,a5,42
+    GPIOC->BSHR |= reverse( (letters[c][x]<<1)&0xFF) ; // set new
+ 260:	8fc9                	or	a5,a5,a0
+ 262:	8fd9                	or	a5,a5,a4
+ 264:	c032                	sw	a2,0(sp)
+    Delay_Ms(POV_DEL);
+ 266:	6549                	lui	a0,0x12
+    GPIOC->BSHR |= reverse( (letters[c][x]<<1)&0xFF) ; // set new
+ 268:	ca9c                	sw	a5,16(a3)
+    Delay_Ms(POV_DEL);
+ 26a:	94050513          	addi	a0,a0,-1728 # 11940 <mycard.c.e40acf93+0xf914>
+ 26e:	35c9                	jal	130 <DelaySysTick>
+  for(x=0;x<6;x++)
+ 270:	4602                	lw	a2,0(sp)
+ 272:	6705                	lui	a4,0x1
+ 274:	4799                	li	a5,6
+ 276:	0605                	addi	a2,a2,1
+ 278:	400116b7          	lui	a3,0x40011
+ 27c:	81870293          	addi	t0,a4,-2024 # 818 <letters>
+ 280:	0ff00593          	li	a1,255
+ 284:	833a                	mv	t1,a4
+ 286:	f8f618e3          	bne	a2,a5,216 <writeString+0xb6>
+    GPIOC->BCR = 0b11111111; // clear all
+ 28a:	cacc                	sw	a1,20(a3)
+		s++;
+ 28c:	0405                	addi	s0,s0,1
+ 28e:	b7ad                	j	1f8 <writeString+0x98>
+
+00000290 <scrollUpDown>:
+
+
+void scrollUpDown(uint8_t section){
+ 290:	1151                	addi	sp,sp,-12
+ 292:	400117b7          	lui	a5,0x40011
+ 296:	c406                	sw	ra,8(sp)
+ 298:	c222                	sw	s0,4(sp)
+ 29a:	c026                	sw	s1,0(sp)
+		if(section==1)
+ 29c:	4705                	li	a4,1
+ 29e:	40078793          	addi	a5,a5,1024 # 40011400 <__global_pointer$+0x20010c00>
+ 2a2:	06e51a63          	bne	a0,a4,316 <scrollUpDown+0x86>
+			GPIOD->BCR |= 0b1100; GPIOD->BSHR |= 0b1000;
+ 2a6:	4bd8                	lw	a4,20(a5)
+ 2a8:	00c76713          	ori	a4,a4,12
+ 2ac:	cbd8                	sw	a4,20(a5)
+ 2ae:	4b98                	lw	a4,16(a5)
+ 2b0:	00876713          	ori	a4,a4,8
+
+		for(int x=0;x<8;x++)
+		{
+			GPIOC->BCR |= 0b11111111; // clear all
+			GPIOC->BSHR |= (1<<x); // set new
+			Delay_Ms(200);
+ 2b4:	001254b7          	lui	s1,0x125
+			GPIOD->BCR |= 0b1100; GPIOD->BSHR |= 0b0100;
+ 2b8:	cb98                	sw	a4,16(a5)
+void scrollUpDown(uint8_t section){
+ 2ba:	4401                	li	s0,0
+			Delay_Ms(200);
+ 2bc:	f8048493          	addi	s1,s1,-128 # 124f80 <mycard.c.e40acf93+0x122f54>
+			GPIOC->BCR |= 0b11111111; // clear all
+ 2c0:	40011737          	lui	a4,0x40011
+ 2c4:	4b5c                	lw	a5,20(a4)
+			Delay_Ms(200);
+ 2c6:	8526                	mv	a0,s1
+			GPIOC->BCR |= 0b11111111; // clear all
+ 2c8:	0ff7e793          	ori	a5,a5,255
+ 2cc:	cb5c                	sw	a5,20(a4)
+			GPIOC->BSHR |= (1<<x); // set new
+ 2ce:	4b14                	lw	a3,16(a4)
+ 2d0:	4785                	li	a5,1
+ 2d2:	008797b3          	sll	a5,a5,s0
+ 2d6:	8fd5                	or	a5,a5,a3
+ 2d8:	cb1c                	sw	a5,16(a4)
+			Delay_Ms(200);
+ 2da:	3d99                	jal	130 <DelaySysTick>
+		for(int x=0;x<8;x++)
+ 2dc:	0405                	addi	s0,s0,1
+ 2de:	47a1                	li	a5,8
+ 2e0:	fef410e3          	bne	s0,a5,2c0 <scrollUpDown+0x30>
+		}
+		for(int x=8;x>0;x--)
+		{
+			GPIOC->BCR |= 0b11111111; // clear all
+			GPIOC->BSHR |= (1<<(x-1)); // set new
+			Delay_Ms(200);
+ 2e4:	001254b7          	lui	s1,0x125
+ 2e8:	f8048493          	addi	s1,s1,-128 # 124f80 <mycard.c.e40acf93+0x122f54>
+			GPIOC->BCR |= 0b11111111; // clear all
+ 2ec:	40011737          	lui	a4,0x40011
+ 2f0:	4b5c                	lw	a5,20(a4)
+			GPIOC->BSHR |= (1<<(x-1)); // set new
+ 2f2:	147d                	addi	s0,s0,-1
+			Delay_Ms(200);
+ 2f4:	8526                	mv	a0,s1
+			GPIOC->BCR |= 0b11111111; // clear all
+ 2f6:	0ff7e793          	ori	a5,a5,255
+ 2fa:	cb5c                	sw	a5,20(a4)
+			GPIOC->BSHR |= (1<<(x-1)); // set new
+ 2fc:	4b14                	lw	a3,16(a4)
+ 2fe:	4785                	li	a5,1
+ 300:	008797b3          	sll	a5,a5,s0
+ 304:	8fd5                	or	a5,a5,a3
+ 306:	cb1c                	sw	a5,16(a4)
+			Delay_Ms(200);
+ 308:	3525                	jal	130 <DelaySysTick>
+		for(int x=8;x>0;x--)
+ 30a:	f06d                	bnez	s0,2ec <scrollUpDown+0x5c>
+		}
+		sectionoff();
+}
+ 30c:	4412                	lw	s0,4(sp)
+ 30e:	40a2                	lw	ra,8(sp)
+ 310:	4482                	lw	s1,0(sp)
+ 312:	0131                	addi	sp,sp,12
+		sectionoff();
+ 314:	bd0d                	j	146 <sectionoff>
+			GPIOD->BCR |= 0b1100; GPIOD->BSHR |= 0b0100;
+ 316:	4bd8                	lw	a4,20(a5)
+ 318:	00c76713          	ori	a4,a4,12
+ 31c:	cbd8                	sw	a4,20(a5)
+ 31e:	4b98                	lw	a4,16(a5)
+ 320:	00476713          	ori	a4,a4,4
+ 324:	bf41                	j	2b4 <scrollUpDown+0x24>
+
+00000326 <handle_reset>:
+	asm volatile( "\n\
+ 326:	20000197          	auipc	gp,0x20000
+ 32a:	4da18193          	addi	gp,gp,1242 # 20000800 <__global_pointer$>
+ 32e:	00018113          	mv	sp,gp
+ 332:	08000513          	li	a0,128
+ 336:	30051073          	csrw	mstatus,a0
+ 33a:	468d                	li	a3,3
+ 33c:	00000517          	auipc	a0,0x0
+ 340:	cc450513          	addi	a0,a0,-828 # 0 <InterruptVector>
+ 344:	8d55                	or	a0,a0,a3
+ 346:	30551073          	csrw	mtvec,a0
+asm volatile(
+ 34a:	20000517          	auipc	a0,0x20000
+ 34e:	cb650513          	addi	a0,a0,-842 # 20000000 <switch_wake>
+ 352:	20000597          	auipc	a1,0x20000
+ 356:	cb258593          	addi	a1,a1,-846 # 20000004 <_ebss>
+ 35a:	4601                	li	a2,0
+ 35c:	00b55663          	bge	a0,a1,368 <handle_reset+0x42>
+ 360:	c110                	sw	a2,0(a0)
+ 362:	0511                	addi	a0,a0,4
+ 364:	feb54ee3          	blt	a0,a1,360 <handle_reset+0x3a>
+ 368:	00000517          	auipc	a0,0x0
+ 36c:	7b050513          	addi	a0,a0,1968 # b18 <_data_lma>
+ 370:	20000597          	auipc	a1,0x20000
+ 374:	c9058593          	addi	a1,a1,-880 # 20000000 <switch_wake>
+ 378:	20000617          	auipc	a2,0x20000
+ 37c:	c8860613          	addi	a2,a2,-888 # 20000000 <switch_wake>
+ 380:	00c58863          	beq	a1,a2,390 <handle_reset+0x6a>
+ 384:	4114                	lw	a3,0(a0)
+ 386:	c194                	sw	a3,0(a1)
+ 388:	0511                	addi	a0,a0,4
+ 38a:	0591                	addi	a1,a1,4
+ 38c:	fec59ae3          	bne	a1,a2,380 <handle_reset+0x5a>
+	SysTick->CTLR = 1;
+ 390:	e000f7b7          	lui	a5,0xe000f
+ 394:	4705                	li	a4,1
+ 396:	c398                	sw	a4,0(a5)
+asm volatile(
+ 398:	3fc00793          	li	a5,1020
+ 39c:	34179073          	csrw	mepc,a5
+ 3a0:	30200073          	mret
+
+000003a4 <ADC1_IRQHandler>:
+	asm volatile( "1: j 1b" );
+ 3a4:	a001                	j	3a4 <ADC1_IRQHandler>
+
+000003a6 <NMI_Handler>:
+	RCC->INTR |= RCC_CSSC;	// clear the clock security int flag
+ 3a6:	40021737          	lui	a4,0x40021
+ 3aa:	471c                	lw	a5,8(a4)
+ 3ac:	008006b7          	lui	a3,0x800
+ 3b0:	8fd5                	or	a5,a5,a3
+ 3b2:	c71c                	sw	a5,8(a4)
+
+000003b4 <SystemInit>:
+	// CH32V003 flash latency
+#if defined(CH32X03x)
+	FLASH->ACTLR = FLASH_ACTLR_LATENCY_2;                   // +2 Cycle Latency (Recommended per TRM)
+#elif defined(CH32V003)
+	#if FUNCONF_SYSTEM_CORE_CLOCK > 25000000
+		FLASH->ACTLR = FLASH_ACTLR_LATENCY_1;               // +1 Cycle Latency
+ 3b4:	400227b7          	lui	a5,0x40022
+ 3b8:	4705                	li	a4,1
+ 3ba:	c398                	sw	a4,0(a5)
+#if defined(FUNCONF_USE_HSI) && FUNCONF_USE_HSI
+	#if defined(CH32V30x) || defined(CH32V20x) || defined(CH32V10x)
+		EXTEN->EXTEN_CTR |= EXTEN_PLL_HSI_PRE;
+	#endif
+	#if defined(FUNCONF_USE_PLL) && FUNCONF_USE_PLL
+		RCC->CFGR0 = BASE_CFGR0;
+ 3bc:	400217b7          	lui	a5,0x40021
+		RCC->CTLR  = BASE_CTLR | RCC_HSION | RCC_PLLON; 			// Use HSI, enable PLL.
+ 3c0:	01080737          	lui	a4,0x1080
+		RCC->CFGR0 = BASE_CFGR0;
+ 3c4:	0007a223          	sw	zero,4(a5) # 40021004 <__global_pointer$+0x20020804>
+		RCC->CTLR  = BASE_CTLR | RCC_HSION | RCC_PLLON; 			// Use HSI, enable PLL.
+ 3c8:	08170713          	addi	a4,a4,129 # 1080081 <mycard.c.e40acf93+0x107e055>
+ 3cc:	c398                	sw	a4,0(a5)
+	#else
+		FLASH->ACTLR = FLASH_ACTLR_LATENCY_1;       		// +1 Cycle Latency
+	#endif
+#endif
+
+	RCC->INTR  = 0x009F0000;                               // Clear PLL, CSSC, HSE, HSI and LSI ready flags.
+ 3ce:	009f0737          	lui	a4,0x9f0
+ 3d2:	c798                	sw	a4,8(a5)
+
+#if defined(FUNCONF_USE_PLL) && FUNCONF_USE_PLL
+	while((RCC->CTLR & RCC_PLLRDY) == 0);                       	// Wait till PLL is ready
+ 3d4:	020006b7          	lui	a3,0x2000
+ 3d8:	40021737          	lui	a4,0x40021
+ 3dc:	431c                	lw	a5,0(a4)
+ 3de:	8ff5                	and	a5,a5,a3
+ 3e0:	dff5                	beqz	a5,3dc <SystemInit+0x28>
+	uint32_t tmp32 = RCC->CFGR0 & ~(0x03);							// clr the SW
+ 3e2:	435c                	lw	a5,4(a4)
+	RCC->CFGR0 = tmp32 | RCC_SW_PLL;                       			// Select PLL as system clock source
+	while ((RCC->CFGR0 & (uint32_t)RCC_SWS) != (uint32_t)0x08); 	// Wait till PLL is used as system clock source
+ 3e4:	400216b7          	lui	a3,0x40021
+	uint32_t tmp32 = RCC->CFGR0 & ~(0x03);							// clr the SW
+ 3e8:	9bf1                	andi	a5,a5,-4
+	RCC->CFGR0 = tmp32 | RCC_SW_PLL;                       			// Select PLL as system clock source
+ 3ea:	0027e793          	ori	a5,a5,2
+ 3ee:	c35c                	sw	a5,4(a4)
+	while ((RCC->CFGR0 & (uint32_t)RCC_SWS) != (uint32_t)0x08); 	// Wait till PLL is used as system clock source
+ 3f0:	4721                	li	a4,8
+ 3f2:	42dc                	lw	a5,4(a3)
+ 3f4:	8bb1                	andi	a5,a5,12
+ 3f6:	fee79ee3          	bne	a5,a4,3f2 <SystemInit+0x3e>
+
+#if defined( FUNCONF_USE_UARTPRINTF ) && FUNCONF_USE_UARTPRINTF
+	SetupUART( UART_BRR );
+#endif
+#if defined( FUNCONF_USE_DEBUGPRINTF ) && FUNCONF_USE_DEBUGPRINTF
+	SetupDebugPrintf();
+ 3fa:	b315                	j	11e <SetupDebugPrintf>
+
+000003fc <main>:
+{
+ 3fc:	1141                	addi	sp,sp,-16
+ 3fe:	c606                	sw	ra,12(sp)
+ 400:	c422                	sw	s0,8(sp)
+ 402:	c226                	sw	s1,4(sp)
+	SystemInit();
+ 404:	3f45                	jal	3b4 <SystemInit>
+	SetupDebugPrintf();
+ 406:	3b21                	jal	11e <SetupDebugPrintf>
+	SysTick->CTLR = 0;
+ 408:	e000f7b7          	lui	a5,0xe000f
+ 40c:	0007a023          	sw	zero,0(a5) # e000f000 <__global_pointer$+0xc000e800>
+	SysTick->CNT = 0;
+ 410:	0007a423          	sw	zero,8(a5)
+	SysTick->CTLR = SYSTICK_CTLR_STE | SYSTICK_CTLR_STIE |
+ 414:	471d                	li	a4,7
+ 416:	c398                	sw	a4,0(a5)
+	RCC->APB2PCENR = RCC_APB2Periph_GPIOD | RCC_APB2Periph_GPIOC | RCC_APB2Periph_AFIO;
+ 418:	40021737          	lui	a4,0x40021
+ 41c:	03100793          	li	a5,49
+ 420:	cf1c                	sw	a5,24(a4)
+	RCC->APB1PCENR |= RCC_APB1Periph_TIM2;
+ 422:	4f5c                	lw	a5,28(a4)
+	TIM2->PSC = 0xFFFF;
+ 424:	400006b7          	lui	a3,0x40000
+	funPinMode( PD4, GPIO_CFGLR_IN_FLOAT );
+ 428:	fff100b7          	lui	ra,0xfff10
+	RCC->APB1PCENR |= RCC_APB1Periph_TIM2;
+ 42c:	0017e793          	ori	a5,a5,1
+ 430:	cf5c                	sw	a5,28(a4)
+	RCC->APB1PRSTR |= RCC_APB1Periph_TIM2;
+ 432:	4b1c                	lw	a5,16(a4)
+	funPinMode( PD4, GPIO_CFGLR_IN_FLOAT );
+ 434:	10fd                	addi	ra,ra,-1
+ 436:	00040337          	lui	t1,0x40
+	RCC->APB1PRSTR |= RCC_APB1Periph_TIM2;
+ 43a:	0017e793          	ori	a5,a5,1
+ 43e:	cb1c                	sw	a5,16(a4)
+	RCC->APB1PRSTR &= ~RCC_APB1Periph_TIM2;
+ 440:	4b1c                	lw	a5,16(a4)
+	funDigitalWrite( PA2, FUN_HIGH );
+ 442:	4591                	li	a1,4
+	funDigitalWrite( PD0, FUN_HIGH );
+ 444:	4385                	li	t2,1
+	RCC->APB1PRSTR &= ~RCC_APB1Periph_TIM2;
+ 446:	9bf9                	andi	a5,a5,-2
+ 448:	cb1c                	sw	a5,16(a4)
+	TIM2->PSC = 0xFFFF;
+ 44a:	57fd                	li	a5,-1
+ 44c:	02f69423          	sh	a5,40(a3) # 40000028 <__global_pointer$+0x1ffff828>
+	TIM2->CTLR1 |= TIM_CEN;
+ 450:	0006d783          	lhu	a5,0(a3)
+	funPinMode( PC2,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 454:	757d                	lui	a0,0xfffff
+ 456:	0ff50513          	addi	a0,a0,255 # fffff0ff <__global_pointer$+0xdfffe8ff>
+	TIM2->CTLR1 |= TIM_CEN;
+ 45a:	07c2                	slli	a5,a5,0x10
+ 45c:	83c1                	srli	a5,a5,0x10
+ 45e:	0017e793          	ori	a5,a5,1
+ 462:	00f69023          	sh	a5,0(a3)
+	funPinMode( PD4, GPIO_CFGLR_IN_FLOAT );
+ 466:	400117b7          	lui	a5,0x40011
+ 46a:	4007a683          	lw	a3,1024(a5) # 40011400 <__global_pointer$+0x20010c00>
+ 46e:	40078613          	addi	a2,a5,1024
+	funPinMode( PC3,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 472:	6405                	lui	s0,0x1
+	funPinMode( PD4, GPIO_CFGLR_IN_FLOAT );
+ 474:	0016f6b3          	and	a3,a3,ra
+ 478:	0066e6b3          	or	a3,a3,t1
+ 47c:	40d7a023          	sw	a3,1024(a5)
+	funPinMode( PD0,  GPIO_CFGLR_IN_PUPD ); //switch
+ 480:	4007a683          	lw	a3,1024(a5)
+ 484:	9ac1                	andi	a3,a3,-16
+ 486:	0086e693          	ori	a3,a3,8
+ 48a:	40d7a023          	sw	a3,1024(a5)
+	funDigitalWrite( PA2, FUN_HIGH );
+ 48e:	80b7a823          	sw	a1,-2032(a5)
+	funDigitalWrite( PD0, FUN_HIGH );
+ 492:	00762823          	sw	t2,16(a2)
+	funPinMode( PC0,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 496:	4394                	lw	a3,0(a5)
+	funPinMode( PC3,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 498:	75c5                	lui	a1,0xffff1
+	funPinMode( PC0,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 49a:	9ac1                	andi	a3,a3,-16
+ 49c:	0016e693          	ori	a3,a3,1
+ 4a0:	c394                	sw	a3,0(a5)
+	funPinMode( PC1,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 4a2:	4394                	lw	a3,0(a5)
+ 4a4:	f0f6f693          	andi	a3,a3,-241
+ 4a8:	0106e693          	ori	a3,a3,16
+ 4ac:	c394                	sw	a3,0(a5)
+	funPinMode( PC2,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 4ae:	4394                	lw	a3,0(a5)
+ 4b0:	8ee9                	and	a3,a3,a0
+ 4b2:	1006e693          	ori	a3,a3,256
+ 4b6:	c394                	sw	a3,0(a5)
+	funPinMode( PC3,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 4b8:	0007a283          	lw	t0,0(a5)
+ 4bc:	fff58693          	addi	a3,a1,-1 # ffff0fff <__global_pointer$+0xdfff07ff>
+ 4c0:	c036                	sw	a3,0(sp)
+ 4c2:	00d2f2b3          	and	t0,t0,a3
+ 4c6:	0082e2b3          	or	t0,t0,s0
+ 4ca:	0057a023          	sw	t0,0(a5)
+	funPinMode( PC4,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 4ce:	4394                	lw	a3,0(a5)
+ 4d0:	62c1                	lui	t0,0x10
+	funPinMode( PC7,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 4d2:	100005b7          	lui	a1,0x10000
+	funPinMode( PC4,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 4d6:	0016f6b3          	and	a3,a3,ra
+ 4da:	0056e6b3          	or	a3,a3,t0
+ 4de:	c394                	sw	a3,0(a5)
+	funPinMode( PC5,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 4e0:	4394                	lw	a3,0(a5)
+ 4e2:	ff1002b7          	lui	t0,0xff100
+ 4e6:	fff28493          	addi	s1,t0,-1 # ff0fffff <__global_pointer$+0xdf0ff7ff>
+ 4ea:	8ee5                	and	a3,a3,s1
+ 4ec:	001000b7          	lui	ra,0x100
+ 4f0:	0016e6b3          	or	a3,a3,ra
+ 4f4:	c394                	sw	a3,0(a5)
+	funPinMode( PC6,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 4f6:	4394                	lw	a3,0(a5)
+ 4f8:	f10002b7          	lui	t0,0xf1000
+ 4fc:	12fd                	addi	t0,t0,-1
+ 4fe:	0056f6b3          	and	a3,a3,t0
+ 502:	010002b7          	lui	t0,0x1000
+ 506:	0056e6b3          	or	a3,a3,t0
+ 50a:	c394                	sw	a3,0(a5)
+	funPinMode( PC7,  GPIO_CFGLR_OUT_10Mhz_PP );
+ 50c:	4394                	lw	a3,0(a5)
+ 50e:	15fd                	addi	a1,a1,-1
+ 510:	100002b7          	lui	t0,0x10000
+ 514:	8eed                	and	a3,a3,a1
+ 516:	0056e6b3          	or	a3,a3,t0
+ 51a:	c394                	sw	a3,0(a5)
+	funPinMode( PD2, GPIO_CFGLR_OUT_10Mhz_PP );	
+ 51c:	4007a683          	lw	a3,1024(a5)
+	funPinMode( PD3, GPIO_CFGLR_OUT_10Mhz_PP );	
+ 520:	4582                	lw	a1,0(sp)
+	funPinMode( PD2, GPIO_CFGLR_OUT_10Mhz_PP );	
+ 522:	8d75                	and	a0,a0,a3
+ 524:	10056513          	ori	a0,a0,256
+ 528:	40a7a023          	sw	a0,1024(a5)
+	funPinMode( PD3, GPIO_CFGLR_OUT_10Mhz_PP );	
+ 52c:	4007a683          	lw	a3,1024(a5)
+ 530:	8df5                	and	a1,a1,a3
+ 532:	8c4d                	or	s0,s0,a1
+ 534:	4087a023          	sw	s0,1024(a5)
+	funDigitalWrite( PD2, FUN_LOW );
+ 538:	00662823          	sw	t1,16(a2)
+	funDigitalWrite( PD3, FUN_LOW );
+ 53c:	000806b7          	lui	a3,0x80
+ 540:	ca14                	sw	a3,16(a2)
+	asm volatile(
+ 542:	430d                	li	t1,3
+ 544:	80431073          	csrw	0x804,t1
+	AFIO->EXTICR = AFIO_EXTICR_EXTI0_PD;
+ 548:	400106b7          	lui	a3,0x40010
+ 54c:	458d                	li	a1,3
+ 54e:	c68c                	sw	a1,8(a3)
+	EXTI->INTENR = EXTI_INTENR_MR0; // Enable EXT3
+ 550:	4076a023          	sw	t2,1024(a3) # 40010400 <__global_pointer$+0x2000fc00>
+	EXTI->RTENR = EXTI_FTENR_TR0;  // Falling edge trigger
+ 554:	4076a423          	sw	t2,1032(a3)
+ *
+ * @return  none
+ */
+RV_STATIC_INLINE void NVIC_EnableIRQ(IRQn_Type IRQn)
+{
+  NVIC->IENR[((uint32_t)(IRQn) >> 5)] = (1 << ((uint32_t)(IRQn) & 0x1F));
+ 558:	e000e6b7          	lui	a3,0xe000e
+ 55c:	1016a023          	sw	ra,256(a3) # e000e100 <__global_pointer$+0xc000d900>
+	PWR->CTLR |= PWR_CTLR_PDDS;
+ 560:	400075b7          	lui	a1,0x40007
+ 564:	4194                	lw	a3,0(a1)
+ 566:	0026e693          	ori	a3,a3,2
+ 56a:	c194                	sw	a3,0(a1)
+	funPinMode( PD5,  GPIO_CFGLR_IN_PUPD ); //REED switch
+ 56c:	4007a683          	lw	a3,1024(a5)
+ 570:	008005b7          	lui	a1,0x800
+ 574:	8ee5                	and	a3,a3,s1
+ 576:	8ecd                	or	a3,a3,a1
+ 578:	40d7a023          	sw	a3,1024(a5)
+	funDigitalWrite(PD5, FUN_HIGH); //pullup reed switch
+ 57c:	02000793          	li	a5,32
+ 580:	ca1c                	sw	a5,16(a2)
+	RCC->APB1PCENR |= RCC_APB1Periph_PWR;
+ 582:	4f5c                	lw	a5,28(a4)
+ 584:	0057e2b3          	or	t0,a5,t0
+ 588:	00572e23          	sw	t0,28(a4) # 4002101c <__global_pointer$+0x2002081c>
+	RCC->RSTSCKR |= RCC_LSION;
+ 58c:	535c                	lw	a5,36(a4)
+ 58e:	0017e793          	ori	a5,a5,1
+ 592:	d35c                	sw	a5,36(a4)
+	while ((RCC->RSTSCKR & RCC_LSIRDY) == 0) {}
+ 594:	535c                	lw	a5,36(a4)
+ 596:	8b89                	andi	a5,a5,2
+ 598:	dff5                	beqz	a5,594 <main+0x198>
+	EXTI->EVENR |= EXTI_Line9;
+ 59a:	400107b7          	lui	a5,0x40010
+ 59e:	4047a703          	lw	a4,1028(a5) # 40010404 <__global_pointer$+0x2000fc04>
+	uint8_t wakeups=0;
+ 5a2:	4401                	li	s0,0
+	EXTI->EVENR |= EXTI_Line9;
+ 5a4:	20076713          	ori	a4,a4,512
+ 5a8:	40e7a223          	sw	a4,1028(a5)
+	EXTI->FTENR |= EXTI_Line9;
+ 5ac:	40c7a703          	lw	a4,1036(a5)
+ 5b0:	20076713          	ori	a4,a4,512
+ 5b4:	40e7a623          	sw	a4,1036(a5)
+	PWR->AWUPSC |= PWR_AWU_Prescaler_61440;
+ 5b8:	400077b7          	lui	a5,0x40007
+ 5bc:	4b98                	lw	a4,16(a5)
+ 5be:	00f76713          	ori	a4,a4,15
+ 5c2:	cb98                	sw	a4,16(a5)
+	PWR->AWUWR &= ~0x3f;
+ 5c4:	47d8                	lw	a4,12(a5)
+ 5c6:	fc077713          	andi	a4,a4,-64
+ 5ca:	c7d8                	sw	a4,12(a5)
+	PWR->AWUWR |= 63;
+ 5cc:	47d8                	lw	a4,12(a5)
+ 5ce:	03f76713          	ori	a4,a4,63
+ 5d2:	c7d8                	sw	a4,12(a5)
+	PWR->AWUCSR |= (1 << 1);
+ 5d4:	4798                	lw	a4,8(a5)
+ 5d6:	00276713          	ori	a4,a4,2
+ 5da:	c798                	sw	a4,8(a5)
+ 5dc:	4595                	li	a1,5
+ 5de:	8522                	mv	a0,s0
+ 5e0:	3cd5                	jal	d4 <__umodsi3>
+		if (wakeups%5==0)
+ 5e2:	0ff57513          	andi	a0,a0,255
+ 5e6:	12051a63          	bnez	a0,71a <main+0x31e>
+	sectionoff();
+ 5ea:	3eb1                	jal	146 <sectionoff>
+	RCC->APB2PCENR |= 	RCC_APB2Periph_TIM1;
+ 5ec:	400217b7          	lui	a5,0x40021
+ 5f0:	4f94                	lw	a3,24(a5)
+ 5f2:	6605                	lui	a2,0x1
+ 5f4:	80060593          	addi	a1,a2,-2048 # 800 <EXTI7_0_IRQHandler+0x7c>
+ 5f8:	8ecd                	or	a3,a3,a1
+ 5fa:	cf94                	sw	a3,24(a5)
+	RCC->APB2PRSTR |= RCC_APB2Periph_TIM1;
+ 5fc:	47d8                	lw	a4,12(a5)
+	TIM1->BDTR |= TIM_MOE;
+ 5fe:	6521                	lui	a0,0x8
+	funPinMode( PD2, GPIO_CFGLR_OUT_10Mhz_AF_PP );	//enable alt func
+ 600:	90060613          	addi	a2,a2,-1792
+	RCC->APB2PRSTR |= RCC_APB2Periph_TIM1;
+ 604:	8f4d                	or	a4,a4,a1
+ 606:	c7d8                	sw	a4,12(a5)
+	RCC->APB2PRSTR &= ~RCC_APB2Periph_TIM1;
+ 608:	47d8                	lw	a4,12(a5)
+ 60a:	75fd                	lui	a1,0xfffff
+ 60c:	7ff58693          	addi	a3,a1,2047 # fffff7ff <__global_pointer$+0xdfffefff>
+ 610:	8f75                	and	a4,a4,a3
+ 612:	c7d8                	sw	a4,12(a5)
+	TIM1->PSC = 0x0000;	
+ 614:	40013737          	lui	a4,0x40013
+ 618:	c2071423          	sh	zero,-984(a4) # 40012c28 <__global_pointer$+0x20012428>
+	TIM1->ATRLR = 255;	
+ 61c:	0ff00693          	li	a3,255
+ 620:	c2d71623          	sh	a3,-980(a4)
+	TIM1->SWEVGR |= TIM_UG;
+ 624:	c1475683          	lhu	a3,-1004(a4)
+	funPinMode( PD2, GPIO_CFGLR_OUT_10Mhz_AF_PP );	//enable alt func
+ 628:	0ff58593          	addi	a1,a1,255
+		for(int x=1;x<255;x++){
+ 62c:	4485                	li	s1,1
+	TIM1->SWEVGR |= TIM_UG;
+ 62e:	06c2                	slli	a3,a3,0x10
+ 630:	82c1                	srli	a3,a3,0x10
+ 632:	0016e693          	ori	a3,a3,1
+ 636:	c0d71a23          	sh	a3,-1004(a4)
+	TIM1->CTLR1 |= TIM_ARPE;
+ 63a:	c0075683          	lhu	a3,-1024(a4)
+ 63e:	06c2                	slli	a3,a3,0x10
+ 640:	82c1                	srli	a3,a3,0x10
+ 642:	0806e693          	ori	a3,a3,128
+ 646:	c0d71023          	sh	a3,-1024(a4)
+	TIM1->CCER |= TIM_CC1E;
+ 64a:	c2075683          	lhu	a3,-992(a4)
+ 64e:	06c2                	slli	a3,a3,0x10
+ 650:	82c1                	srli	a3,a3,0x10
+ 652:	0016e693          	ori	a3,a3,1
+ 656:	c2d71023          	sh	a3,-992(a4)
+	TIM1->CHCTLR1 |= TIM_OC1M_2 | TIM_OC1M_1 | TIM_OC1PE;
+ 65a:	c1875683          	lhu	a3,-1000(a4)
+ 65e:	06c2                	slli	a3,a3,0x10
+ 660:	82c1                	srli	a3,a3,0x10
+ 662:	0686e693          	ori	a3,a3,104
+ 666:	c0d71c23          	sh	a3,-1000(a4)
+	TIM1->CH1CVR = 1;
+ 66a:	4685                	li	a3,1
+ 66c:	c2d72a23          	sw	a3,-972(a4)
+	TIM1->BDTR |= TIM_MOE;
+ 670:	c4475683          	lhu	a3,-956(a4)
+ 674:	06c2                	slli	a3,a3,0x10
+ 676:	82c1                	srli	a3,a3,0x10
+ 678:	8ec9                	or	a3,a3,a0
+ 67a:	c4d71223          	sh	a3,-956(a4)
+	TIM1->CTLR1 |= TIM_CEN;
+ 67e:	c0075683          	lhu	a3,-1024(a4)
+			Delay_Ms(50);
+ 682:	00049537          	lui	a0,0x49
+ 686:	3e050513          	addi	a0,a0,992 # 493e0 <mycard.c.e40acf93+0x473b4>
+	TIM1->CTLR1 |= TIM_CEN;
+ 68a:	06c2                	slli	a3,a3,0x10
+ 68c:	82c1                	srli	a3,a3,0x10
+ 68e:	0016e693          	ori	a3,a3,1
+ 692:	c0d71023          	sh	a3,-1024(a4)
+	funPinMode( PD2, GPIO_CFGLR_OUT_10Mhz_AF_PP );	//enable alt func
+ 696:	40011737          	lui	a4,0x40011
+ 69a:	40072783          	lw	a5,1024(a4) # 40011400 <__global_pointer$+0x20010c00>
+ 69e:	8fed                	and	a5,a5,a1
+ 6a0:	8fd1                	or	a5,a5,a2
+ 6a2:	40f72023          	sw	a5,1024(a4)
+	GPIOC->BSHR |= 0b11100 ; // set new
+ 6a6:	4b1c                	lw	a5,16(a4)
+ 6a8:	01c7e793          	ori	a5,a5,28
+ 6ac:	cb1c                	sw	a5,16(a4)
+			TIM1->CH1CVR = x;
+ 6ae:	40013737          	lui	a4,0x40013
+ 6b2:	c2972a23          	sw	s1,-972(a4) # 40012c34 <__global_pointer$+0x20012434>
+			Delay_Ms(50);
+ 6b6:	3cad                	jal	130 <DelaySysTick>
+		for(int x=1;x<255;x++){
+ 6b8:	000497b7          	lui	a5,0x49
+ 6bc:	0485                	addi	s1,s1,1
+ 6be:	0ff00713          	li	a4,255
+ 6c2:	3e078513          	addi	a0,a5,992 # 493e0 <mycard.c.e40acf93+0x473b4>
+ 6c6:	fee494e3          	bne	s1,a4,6ae <main+0x2b2>
+			Delay_Ms(50);
+ 6ca:	00049537          	lui	a0,0x49
+ 6ce:	3e050513          	addi	a0,a0,992 # 493e0 <mycard.c.e40acf93+0x473b4>
+			TIM1->CH1CVR = x;
+ 6d2:	40013737          	lui	a4,0x40013
+ 6d6:	c2972a23          	sw	s1,-972(a4) # 40012c34 <__global_pointer$+0x20012434>
+			Delay_Ms(50);
+ 6da:	3c99                	jal	130 <DelaySysTick>
+		for(int x=255;x>0;x--){
+ 6dc:	000497b7          	lui	a5,0x49
+ 6e0:	3e078513          	addi	a0,a5,992 # 493e0 <mycard.c.e40acf93+0x473b4>
+ 6e4:	14fd                	addi	s1,s1,-1
+ 6e6:	400137b7          	lui	a5,0x40013
+ 6ea:	c0078713          	addi	a4,a5,-1024 # 40012c00 <__global_pointer$+0x20012400>
+ 6ee:	f0f5                	bnez	s1,6d2 <main+0x2d6>
+	TIM1->CTLR1 &= ~TIM_CEN;
+ 6f0:	c007d783          	lhu	a5,-1024(a5)
+	funPinMode( PD2, GPIO_CFGLR_OUT_10Mhz_PP );	//back to push pull
+ 6f4:	400116b7          	lui	a3,0x40011
+	TIM1->CTLR1 &= ~TIM_CEN;
+ 6f8:	07c2                	slli	a5,a5,0x10
+ 6fa:	83c1                	srli	a5,a5,0x10
+ 6fc:	9bf9                	andi	a5,a5,-2
+ 6fe:	07c2                	slli	a5,a5,0x10
+ 700:	83c1                	srli	a5,a5,0x10
+ 702:	00f71023          	sh	a5,0(a4)
+	funPinMode( PD2, GPIO_CFGLR_OUT_10Mhz_PP );	//back to push pull
+ 706:	4006a783          	lw	a5,1024(a3) # 40011400 <__global_pointer$+0x20010c00>
+ 70a:	777d                	lui	a4,0xfffff
+ 70c:	0ff70713          	addi	a4,a4,255 # fffff0ff <__global_pointer$+0xdfffe8ff>
+ 710:	8ff9                	and	a5,a5,a4
+ 712:	1007e793          	ori	a5,a5,256
+ 716:	40f6a023          	sw	a5,1024(a3)
+ 71a:	e000e637          	lui	a2,0xe000e
+ 71e:	001005b7          	lui	a1,0x100
+ 722:	10b62023          	sw	a1,256(a2) # e000e100 <__global_pointer$+0xc000d900>
+		sectionoff();
+ 726:	3405                	jal	146 <sectionoff>
+		PFIC->SCTLR |= (1 << 2);
+ 728:	e000f7b7          	lui	a5,0xe000f
+ 72c:	d107a703          	lw	a4,-752(a5) # e000ed10 <__global_pointer$+0xc000e510>
+		wakeups++;
+ 730:	0405                	addi	s0,s0,1
+ 732:	0ff47413          	andi	s0,s0,255
+		PFIC->SCTLR |= (1 << 2);
+ 736:	00476713          	ori	a4,a4,4
+ 73a:	d0e7a823          	sw	a4,-752(a5)
+		switch_wake=0; // reset switch wake flag.
+ 73e:	20000737          	lui	a4,0x20000
+ 742:	00070713          	mv	a4,a4
+ 746:	00070023          	sb	zero,0(a4) # 20000000 <switch_wake>
+ */
+__attribute__( ( always_inline ) ) RV_STATIC_INLINE void __WFE(void)
+{
+  uint32_t t;
+
+  t = NVIC->SCTLR;
+ 74a:	d107a683          	lw	a3,-752(a5)
+  NVIC->SCTLR |= (1<<3)|(1<<5);     // (wfi->wfe)+(__sev)
+ 74e:	d107a703          	lw	a4,-752(a5)
+  NVIC->SCTLR = (NVIC->SCTLR & ~(1<<5)) | ( t & (1<<5));
+ 752:	0206f693          	andi	a3,a3,32
+  NVIC->SCTLR |= (1<<3)|(1<<5);     // (wfi->wfe)+(__sev)
+ 756:	02876713          	ori	a4,a4,40
+ 75a:	d0e7a823          	sw	a4,-752(a5)
+  NVIC->SCTLR = (NVIC->SCTLR & ~(1<<5)) | ( t & (1<<5));
+ 75e:	d107a703          	lw	a4,-752(a5)
+ 762:	fdf77713          	andi	a4,a4,-33
+ 766:	8f55                	or	a4,a4,a3
+ 768:	d0e7a823          	sw	a4,-752(a5)
+  asm volatile ("wfi");
+ 76c:	10500073          	wfi
+  asm volatile ("wfi");
+ 770:	10500073          	wfi
+		SystemInit();
+ 774:	3181                	jal	3b4 <SystemInit>
+  NVIC->IRER[((uint32_t)(IRQn) >> 5)] = (1 << ((uint32_t)(IRQn) & 0x1F));
+ 776:	e000e637          	lui	a2,0xe000e
+ 77a:	001005b7          	lui	a1,0x100
+ 77e:	18b62023          	sw	a1,384(a2) # e000e180 <__global_pointer$+0xc000d980>
+ 782:	bda9                	j	5dc <main+0x1e0>
+
+00000784 <EXTI7_0_IRQHandler>:
+{
+ 784:	7179                	addi	sp,sp,-48
+ 786:	ca2a                	sw	a0,20(sp)
+		scrollUpDown(2);
+ 788:	4509                	li	a0,2
+{
+ 78a:	d606                	sw	ra,44(sp)
+ 78c:	d416                	sw	t0,40(sp)
+ 78e:	d21a                	sw	t1,36(sp)
+ 790:	d01e                	sw	t2,32(sp)
+ 792:	c82e                	sw	a1,16(sp)
+ 794:	c632                	sw	a2,12(sp)
+ 796:	c436                	sw	a3,8(sp)
+ 798:	c23a                	sw	a4,4(sp)
+ 79a:	c03e                	sw	a5,0(sp)
+ 79c:	ce22                	sw	s0,28(sp)
+ 79e:	cc26                	sw	s1,24(sp)
+		scrollUpDown(2);
+ 7a0:	3cc5                	jal	290 <scrollUpDown>
+		scrollUpDown(1);
+ 7a2:	4505                	li	a0,1
+ 7a4:	34f5                	jal	290 <scrollUpDown>
+		scrollUpDown(2);
+ 7a6:	4509                	li	a0,2
+ 7a8:	34e5                	jal	290 <scrollUpDown>
+		scrollUpDown(1);
+ 7aa:	4505                	li	a0,1
+ 7ac:	34d5                	jal	290 <scrollUpDown>
+ 7ae:	4429                	li	s0,10
+		writeString("VARSHA");
+ 7b0:	6485                	lui	s1,0x1
+		TIM2->CNT = 0;
+ 7b2:	400007b7          	lui	a5,0x40000
+ 7b6:	02079223          	sh	zero,36(a5) # 40000024 <__global_pointer$+0x1ffff824>
+		writeString("VARSHA");
+ 7ba:	80048513          	addi	a0,s1,-2048 # 800 <EXTI7_0_IRQHandler+0x7c>
+ 7be:	324d                	jal	160 <writeString>
+		writeString(" AND ");
+ 7c0:	6505                	lui	a0,0x1
+ 7c2:	80850513          	addi	a0,a0,-2040 # 808 <EXTI7_0_IRQHandler+0x84>
+ 7c6:	3a69                	jal	160 <writeString>
+		writeString("JITHIN");
+ 7c8:	6505                	lui	a0,0x1
+ 7ca:	81050513          	addi	a0,a0,-2032 # 810 <EXTI7_0_IRQHandler+0x8c>
+	for(int z=0;z<10;z++){
+ 7ce:	147d                	addi	s0,s0,-1
+		writeString("JITHIN");
+ 7d0:	3a41                	jal	160 <writeString>
+	for(int z=0;z<10;z++){
+ 7d2:	f065                	bnez	s0,7b2 <EXTI7_0_IRQHandler+0x2e>
+	sectionoff();
+ 7d4:	3a8d                	jal	146 <sectionoff>
+}
+ 7d6:	4472                	lw	s0,28(sp)
+	EXTI->INTFR = EXTI_Line0;
+ 7d8:	400107b7          	lui	a5,0x40010
+ 7dc:	4705                	li	a4,1
+ 7de:	40e7aa23          	sw	a4,1044(a5) # 40010414 <__global_pointer$+0x2000fc14>
+}
+ 7e2:	50b2                	lw	ra,44(sp)
+ 7e4:	52a2                	lw	t0,40(sp)
+ 7e6:	5312                	lw	t1,36(sp)
+ 7e8:	5382                	lw	t2,32(sp)
+ 7ea:	44e2                	lw	s1,24(sp)
+ 7ec:	4552                	lw	a0,20(sp)
+ 7ee:	45c2                	lw	a1,16(sp)
+ 7f0:	4632                	lw	a2,12(sp)
+ 7f2:	46a2                	lw	a3,8(sp)
+ 7f4:	4712                	lw	a4,4(sp)
+ 7f6:	4782                	lw	a5,0(sp)
+ 7f8:	6145                	addi	sp,sp,48
+ 7fa:	30200073          	mret
+ 7fe:	0000                	unimp
+ 800:	4156                	lw	sp,84(sp)
+ 802:	5352                	lw	t1,52(sp)
+ 804:	4148                	lw	a0,4(a0)
+ 806:	0000                	unimp
+ 808:	4120                	lw	s0,64(a0)
+ 80a:	444e                	lw	s0,208(sp)
+ 80c:	0020                	addi	s0,sp,8
+ 80e:	0000                	unimp
+ 810:	494a                	lw	s2,144(sp)
+ 812:	4854                	lw	a3,20(s0)
+ 814:	4e49                	li	t3,18
+	...
+
+00000818 <letters>:
+ 818:	0000 0000 0000 6400 0418 1864 3c00 4040     .......d..d..<@@
+ 828:	7c20 0c00 4030 0c30 3c00 3040 3c40 0000      |..0@0..<@0@<..
+ 838:	1c3e 0008 0400 1f1e 041e 1000 7c3c 103c     >...........<|<.
+ 848:	2000 3e40 0201 2200 0814 2214 0000 2838     . @>..."..."..8(
+ 858:	0038 0000 3810 0010 0000 1000 0000 0800     8....8..........
+ 868:	0878 0000 0000 1515 000a 7f00 097f 0109     x...............
+ 878:	1000 7f20 0101 0400 0004 1f01 0000 1519     .. .............
+ 888:	0012 4000 5060 4448 0600 0909 0006 0f00     ...@`PHD........
+ 898:	0102 0001 0000 1f01 0001 4400 4a44 514a     ...........DDJJQ
+ 8a8:	1400 1c74 1417 5100 4a4a 4444 0000 0400     ..t....QJJDD....
+ 8b8:	0404 0000 547c 4454 0800 2a08 081c 7c00     ....|TTD...*...|
+ 8c8:	7c00 7c44 0400 7f02 0402 1000 7f20 1020     .|D|........ . .
+	...
+ 8e0:	6f00 0000 0000 0007 0007 1400 147f 147f     .o..............
+ 8f0:	0000 0407 001e 2300 0813 6264 3600 5649     .......#..db.6IV
+ 900:	5020 0000 0700 0000 0000 221c 0041 0000      P........."A...
+ 910:	2241 001c 1400 3e08 1408 0800 3e08 0808     A".....>.....>..
+ 920:	0000 3050 0000 0800 0808 0808 0000 6060     ..P0..........``
+ 930:	0000 2000 0810 0204 3e00 4951 3e45 0000     ... .....>QIE>..
+ 940:	7f42 0040 4200 5161 4649 2100 4541 314b     B.@..BaQIF.!AEK1
+ 950:	1800 1214 107f 2700 4545 3945 3c00 494a     .......'EEE9.<JI
+ 960:	3049 0100 0971 0305 3600 4949 3649 0600     I0..q....6III6..
+ 970:	4949 1e29 0000 3636 0000 0000 3656 0000     II)...66....V6..
+ 980:	0800 2214 0041 1400 1414 1414 0000 2241     ..."A.........A"
+ 990:	0814 0200 5101 0609 3e00 5d41 4e49 7e00     .....Q...>A]IN.~
+ 9a0:	0909 7e09 7f00 4949 3649 3e00 4141 2241     ...~..III6.>AAA"
+ 9b0:	7f00 4141 3e41 7f00 4949 4149 7f00 0909     ..AAA>..IIIA....
+ 9c0:	0109 3e00 4941 7a49 7f00 0808 7f08 0000     ...>AIIz........
+ 9d0:	7f41 0041 2000 4140 013f 7f00 1408 4122     A.A.. @A?....."A
+ 9e0:	7f00 4040 4040 7f00 0c02 7f02 7f00 0804     ..@@@@..........
+ 9f0:	7f10 3e00 4141 3e41 7f00 0909 0609 3e00     ...>AAA>.......>
+ a00:	5141 5e21 7f00 1909 4629 4600 4949 3149     AQ!^....)F.FIII1
+ a10:	0100 7f01 0101 3f00 4040 3f40 0f00 4030     .......?@@@?..0@
+ a20:	0f30 3f00 3040 3f40 6300 0814 6314 0700     0..?@0@?.c...c..
+ a30:	7008 0708 6100 4951 4345 3c00 494a 1e29     .p...aQIEC.<JI).
+ a40:	0200 0804 2010 0000 7f41 0000 0400 0102     ..... ..A.......
+ a50:	0402 4000 4040 4040 0000 0300 0004 2000     ...@@@@@....... 
+ a60:	5454 7854 7f00 4448 3844 3800 4444 2044     TTTx..HDD8.8DDD 
+ a70:	3800 4444 7f48 3800 5454 1854 0800 097e     .8DDH..8TTT...~.
+ a80:	0201 0c00 5252 3e52 7f00 0408 7804 0000     ....RRR>.....x..
+ a90:	7d44 0040 2000 4440 003d 0000 107f 4428     D}@.. @D=.....(D
+ aa0:	0000 7f41 0040 7c00 1804 7804 7c00 0408     ..A.@..|...x.|..
+ ab0:	7804 3800 4444 3844 7c00 1414 0814 0800     .x.8DDD8.|......
+ ac0:	1414 7c18 7c00 0408 0804 4800 5454 2054     ...|.|.....HTTT 
+ ad0:	0400 443f 2040 3c00 4040 7c20 1c00 4020     ..?D@ .<@@ |.. @
+ ae0:	1c20 3c00 3040 3c40 4400 1028 4428 0c00      ..<@0@<.D(.(D..
+ af0:	5050 3c50 4400 5464 444c 0000 3608 4141     PPP<.DdTLD...6AA
+ b00:	0000 7f00 0000 4100 3641 0008 0400 0402     .......AA6......
+ b10:	0408 7f00 6b6b 7f6b                         ....kkk.

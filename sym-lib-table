@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "wch_mcu")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty/wch_mcu.kicad_sym")(options "")(descr ""))
+  (lib (name "lithium")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty/Power_Management.kicad_sym")(options "")(descr ""))
+  (lib (name "mysyms")(type "KiCad")(uri "${KIPRJMOD}/mysyms.kicad_sym")(options "")(descr ""))
+)

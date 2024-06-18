@@ -1,0 +1,18 @@
+Id,Designator,Footprint,Quantity,Designation,Supplier and ref
+1,"D16,D11,D14,D15,D13,D10,D12,D8,D9",LED_0805_2012Metric,9,PINK LED,ok
+2,"D7,D17,D3,D6",LED_0805_2012Metric,4,RED LED,ok
+3,D19,LED_WS2812B-2020_PLCC4_2.0x2.0mm,1,WS2812B-2020,ok
+4,U5,SOT-23-6,1,TP4057,ok
+5,"R11,R7,R10,R5,R9,R3,R6,R2,R4,R8",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,10,1K,ok
+6,"R16,R15,R17,R1,R14,R12,R13",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,7,10K,ok
+7,C2,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,1,10uF,ok
+8,"Q1,Q2",SOT-23,2,BC817,ok
+9,"D5,D4",LED_0805_2012Metric,2,BLUE LED,ok
+11,"D2,D18,D1",LED_0805_2012Metric,3,GREEN LED,ok
+12,"C1,C3,C5",C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,3,100nF,ok
+15,P1,USB_C_Receptacle_GCT_USB4125-xx-x_6P_TopMnt_Horizontal,1,USB_C_Plug_USB2.0_6pin,ok
+16,U2,Vishay_MINICAST-3Pin,1,TSOP382xx,0
+17,U1,TSSOP-20_4.4x6.5mm_P0.65mm,1,CH32V003F4P6,ok
+18,SW2,SW_PUSH_1P1T_6x3.5mm_H4.3_APEM_MJTP1243,1,SW_Push,ok
+19,U3,Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering,1,BMP280,
+20,"R19,R18",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,2,5.1K,

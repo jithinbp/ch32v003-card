@@ -1,0 +1,8 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"C5","100nF","C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",13.850000,-42.150000,90.000000,bottom
+"R12","10K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",14.725000,-39.275000,180.000000,bottom
+"R13","10K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",14.725000,-37.325000,180.000000,bottom
+"R14","10K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",19.900000,-42.125000,-90.000000,bottom
+"R18","5.1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",3.450000,-22.500000,180.000000,bottom
+"R19","5.1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",3.450000,-24.600000,180.000000,bottom
+"U3","BMP280","Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering",16.250000,-42.250000,90.000000,bottom

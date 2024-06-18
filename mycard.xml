@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/media/fabio/Dados/Projetos/Projeto-Natal-2023-Fabio/Projeto Base/Projeto-Natal-2023-Base/Projeto-Natal-2023-Base.kicad_sch</source>
+    <date>Wed 22 Nov 2023 21:12:51 -03</date>
+    <tool>Eeschema 7.0.9-7.0.9~ubuntu22.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Christmas Ball</title>
+        <company>Franzininho</company>
+        <rev>1.1</rev>
+        <date>2023-11-22</date>
+        <source>Projeto-Natal-2023-Base.kicad_sch</source>
+        <comment number="1" value="Fabio Souza"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>BC-2001</value>
+      <footprint>Battery:BatteryHolder_Keystone_3002_1x2032</footprint>
+      <datasheet>https://octopart.com/bc-2001-multicomp-21274013</datasheet>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Single-cell battery"/>
+      <property name="ki_keywords" value="battery cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fa55288-50e4-4a2b-88c5-da6c48670752</tstamps>
+    </comp>
+    <comp ref="BZ1">
+      <value>MLT-5030</value>
+      <footprint>Library:PassiveBuzzerSMD_JiangsuHuaneng_MLT-5030</footprint>
+      <datasheet>https://jlcpcb.com/partdetail/Jiangsu_HuanengElec-MLT5030/C95297</datasheet>
+      <fields>
+        <field name="LCSC">C95297</field>
+      </fields>
+      <libsource lib="Device" part="Buzzer" description="Buzzer, polarized"/>
+      <property name="LCSC" value="C95297"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Buzzer, polarized"/>
+      <property name="ki_keywords" value="quartz resonator ceramic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2938d36-14fe-4b02-95e1-f277ee771d28</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4789cf17-803d-4d28-91ed-cb108f508c84</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C15850</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized_Small" description="Polarized capacitor, small symbol"/>
+      <property name="LCSC" value="C15850"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a038ffd8-8846-43b5-a2f5-24badd65b09c</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
+      <property name="ki_keywords" value="capacitor cap"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e56b3f06-bb01-45a3-834d-ba38358e0fd4</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38a1f8cf-2471-4fa6-be6d-40a7d3548929</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6a83c61-e5aa-4d8a-85b3-a308b9d7851a</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7048cd1-6d77-478a-a3ea-f81d03dd74f5</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7e3c09a-b5bf-43de-8f62-b61f24052211</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3895a022-c342-4020-a1dc-0d90876c5f7a</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0cff95f5-0fbd-417a-9baf-2b5023927d11</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7738400c-a6e6-42bf-b446-6697f9dbc6d9</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>09b7a4a8-9171-4404-b411-0e2006fd68b2</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9627394-e838-4135-a57e-8312bcd18f91</tstamps>
+    </comp>
+    <comp ref="D10">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e6a3b77-538c-4b6f-929d-4f931db8de3f</tstamps>
+    </comp>
+    <comp ref="D11">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0ca2969-f0ce-4555-921f-c2017111b573</tstamps>
+    </comp>
+    <comp ref="D12">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>962291f4-e6c4-4203-9866-70b10fae6d20</tstamps>
+    </comp>
+    <comp ref="D13">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdade240-c316-43c7-ab66-9981250771f2</tstamps>
+    </comp>
+    <comp ref="D14">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd1553da-241a-43ee-aa8f-161c94f52e07</tstamps>
+    </comp>
+    <comp ref="D15">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c245f0e-70d3-4544-9dbd-a7369575c60f</tstamps>
+    </comp>
+    <comp ref="D16">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a5869ae2-dc5c-449d-a9d4-82d72e738e97</tstamps>
+    </comp>
+    <comp ref="D17">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>14e89927-7c43-454c-b941-0e7ed81124ed</tstamps>
+    </comp>
+    <comp ref="D18">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8bdd70f-2ee7-43da-9825-1a71bd625c4f</tstamps>
+    </comp>
+    <comp ref="D19">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5cc9c30-338c-414f-bc21-ea50c5eda18d</tstamps>
+    </comp>
+    <comp ref="D20">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f301384f-79c4-499f-983e-83a75d4de69e</tstamps>
+    </comp>
+    <comp ref="D21">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f24b2b71-901b-401d-a25b-7fa6a919413a</tstamps>
+    </comp>
+    <comp ref="D22">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79f9224b-8984-46f7-ab9a-150b2323e5f5</tstamps>
+    </comp>
+    <comp ref="D23">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c28830b0-0595-440c-a047-83bc33c054a0</tstamps>
+    </comp>
+    <comp ref="D24">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e60b66aa-ef3c-4cc3-86ee-6e1b5faee30d</tstamps>
+    </comp>
+    <comp ref="D25">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f04a2847-f10a-4340-9b73-785ca1d08341</tstamps>
+    </comp>
+    <comp ref="D26">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1743bd3b-31bc-474c-874c-29c7c1fdb50a</tstamps>
+    </comp>
+    <comp ref="D27">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b4565cc7-4436-43d4-97bd-e0fd6f7084c5</tstamps>
+    </comp>
+    <comp ref="D28">
+      <value>NCD0805G1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C84260</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C84260"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20a10478-10ae-498a-9d66-6cfe3747eb8a</tstamps>
+    </comp>
+    <comp ref="D29">
+      <value>e17-21SURC/S530-A3/TR8</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C72037</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C72037"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89f2cc31-bf74-4b1b-b9af-259e79eb328b</tstamps>
+    </comp>
+    <comp ref="D30">
+      <value>D-B080508B1-KS2</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <fields>
+        <field name="LCSC">C108412</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="LCSC" value="C108412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>828a5306-4866-4bc6-b6b6-42145edb52e2</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC818-D.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C94412</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="LCSC" value="C94412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="ki_keywords" value="NPN Transistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55a0e615-26d8-460f-b708-da64f419468f</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC818-D.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C94412</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="LCSC" value="C94412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="ki_keywords" value="NPN Transistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a46529c4-ec6f-4c0b-83a9-d945482cf6b2</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC818-D.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C94412</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="LCSC" value="C94412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="ki_keywords" value="NPN Transistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdd51a39-4e81-47c9-aff0-472553ec2e37</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC818-D.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C94412</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="LCSC" value="C94412"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="ki_keywords" value="NPN Transistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>793f77b9-cbc4-47d4-a852-d05ac00c15e9</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>MMBT3906</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pdf/datasheet/pzt3906-d.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C111114</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="MMBT3906" description="-0.2A Ic, -40V Vce, Small Signal PNP Transistor, SOT-23"/>
+      <property name="LCSC" value="C111114"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="-0.2A Ic, -40V Vce, Small Signal PNP Transistor, SOT-23"/>
+      <property name="ki_keywords" value="PNP Transistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef0b9735-ef3d-4582-9d60-20fe434636e2</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C25804</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d26481f2-57a3-44ca-8459-fe0db0ba0b3a</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d33a62e-63bf-4038-b8ad-577b19e62b05</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99e9fcb1-20cb-4567-b3e7-93e14e23017b</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04a8e9be-f5c7-47f5-b53b-ef1e3c247db3</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33b15555-e9ae-40bf-8fe3-917d01754f1b</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0008b67b-38fd-48cf-9370-24a33a2dc987</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e482dc0-a2ac-4854-b5a4-8e5fa4542bb8</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c763336d-a114-4ad1-83d6-368476b3fde8</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8382d71-8b72-411d-b86b-00c1a6e133af</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b01529c6-e52a-44fe-b20a-7cd5e7443781</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e1655731-5712-4fa5-8246-29eecd90c96a</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5437d4c5-7b0d-49bf-ab2e-bc21c1a0d41c</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6541cadb-2031-445c-809f-ef818b0d3c6e</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C21190</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9396dd11-4e9e-4d82-a2ec-d95df973cfb4</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C25804</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <property name="LCSC" value="C25804"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small US symbol"/>
+      <property name="ki_keywords" value="r resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ab81f09c-72fb-4210-b1fc-392e8c518664</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>EVQP7A</value>
+      <footprint>Button_Switch_SMD:SW_SPST_EVQP7A</footprint>
+      <datasheet>https://www.lcsc.com/product-detail/Tactile-Switches_Made-in-China-C23873_C23873.html</datasheet>
+      <fields>
+        <field name="LCSC">C79167</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC" value="C79167"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Push button switch, generic, two pins"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9333450b-ab36-4625-9f2c-45204ce1492f</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <datasheet>https://www.lcsc.com/product-detail/Tactile-Switches_Made-in-China-C23873_C23873.html</datasheet>
+      <fields>
+        <field name="LCSC">C191626</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC" value="C191626"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <property name="ki_description" value="Push button switch, generic, two pins"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4dc8bb2d-0967-485d-a12c-4dc5fe974417</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>CH32V003F4P6</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <datasheet>http://www.wch-ic.com/downloads/CH32V003DS0_PDF.html</datasheet>
+      <libsource lib="wch_mcu" part="CH32V003F4P6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Projeto-Natal-2023-Base.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2c1ff681-db0f-4c01-a8d1-dcf19cf25b27</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x01_Pin">
+      <description>Generic connector, single row, 01x01, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Buzzer">
+      <description>Buzzer, polarized</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Buzzer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">BZ</field>
+        <field name="Value">Buzzer</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized_Small">
+      <description>Polarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC817">
+      <description>0.8A Ic, 45V Vce, NPN Transistor, SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BC818-D.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC817</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BC818-D.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="MMBT3906">
+      <description>-0.2A Ic, -40V Vce, Small Signal PNP Transistor, SOT-23</description>
+      <docs>https://www.onsemi.com/pdf/datasheet/pzt3906-d.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">MMBT3906</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/pzt3906-d.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="wch_mcu" part="CH32V003F4P6">
+      <docs>http://www.wch-ic.com/downloads/CH32V003DS0_PDF.html</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CH32V003F4P6</field>
+        <field name="Footprint">Package_SO:SOP-16_3.9x9.9mm_P1.27mm</field>
+        <field name="Datasheet">http://www.wch-ic.com/downloads/CH32V003DS0_PDF.html</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PD4" type="bidirectional"/>
+        <pin num="2" name="PD5" type="bidirectional"/>
+        <pin num="3" name="PD6" type="bidirectional"/>
+        <pin num="4" name="NRST/PD7" type="input"/>
+        <pin num="5" name="OSC_IN/PA1" type="input"/>
+        <pin num="6" name="OSC_OUT/PA2" type="input"/>
+        <pin num="7" name="VSS" type="power_in"/>
+        <pin num="8" name="PD0" type="bidirectional"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="PC0" type="bidirectional"/>
+        <pin num="11" name="PC1" type="bidirectional"/>
+        <pin num="12" name="PC2" type="bidirectional"/>
+        <pin num="13" name="PC3" type="bidirectional"/>
+        <pin num="14" name="PC4" type="bidirectional"/>
+        <pin num="15" name="PC5" type="bidirectional"/>
+        <pin num="16" name="PC6" type="bidirectional"/>
+        <pin num="17" name="PC7" type="bidirectional"/>
+        <pin num="18" name="PD1" type="bidirectional"/>
+        <pin num="19" name="PD2" type="bidirectional"/>
+        <pin num="20" name="PD3" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>/usr/share/kicad/symbols//Transistor_BJT.kicad_sym</uri>
+    </library>
+    <library logical="wch_mcu">
+      <uri>/media/fabio/Dados/Projetos/Projeto-Natal-2023-Fabio/Projeto Base/Projeto-Natal-2023-Base/Library.pretty/wch_mcu.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="Q5" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="VDD" pintype="power_in"/>
+    </net>
+    <net code="2" name="BT">
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="PD0" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="BZR">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="U1" pin="19" pinfunction="PD2" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="C1">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="PD3" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="C2">
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="PD4" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="C3">
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="PD5" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="C4">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="PD6" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="BZ1" pin="1" pinfunction="-" pintype="passive"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="VSS" pintype="power_in"/>
+    </net>
+    <net code="9" name="L1">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D22" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D30" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="L2">
+      <node ref="D10" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D21" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D29" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="L3">
+      <node ref="D11" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D20" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D28" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="L4">
+      <node ref="D12" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D19" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D27" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="L5">
+      <node ref="D13" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D18" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D26" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="14" name="L6">
+      <node ref="D14" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D17" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D25" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="L7">
+      <node ref="D15" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D16" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D24" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="L8">
+      <node ref="D23" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(BZ1-+)">
+      <node ref="BZ1" pin="2" pinfunction="+" pintype="passive"/>
+      <node ref="Q5" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="18" name="Net-(D1-K)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="19" name="Net-(D10-K)">
+      <node ref="D10" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D11" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D12" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D13" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D14" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D15" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D9" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="20" name="Net-(D16-K)">
+      <node ref="D16" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D17" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D18" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D19" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D20" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D21" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D22" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="21" name="Net-(D23-K)">
+      <node ref="D23" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D24" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D25" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D26" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D27" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D28" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D29" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D30" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q4" pin="3" pinfunction="C" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(Q1-B)">
+      <node ref="Q1" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(Q2-B)">
+      <node ref="Q2" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(Q3-B)">
+      <node ref="Q3" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(Q4-B)">
+      <node ref="Q4" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(Q5-B)">
+      <node ref="Q5" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(U1-NRST{slash}PD7)">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="NRST/PD7" pintype="input"/>
+    </net>
+    <net code="28" name="Net-(U1-PC0)">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="PC0" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="Net-(U1-PC1)">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="PC1" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="Net-(U1-PC2)">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="PC2" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="Net-(U1-PC3)">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="PC3" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="Net-(U1-PC4)">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="PC4" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="Net-(U1-PC5)">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="PC5" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="Net-(U1-PC6)">
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="PC6" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="Net-(U1-PC7)">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="PC7" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="PA1">
+      <node ref="U1" pin="5" pinfunction="OSC_IN/PA1" pintype="input"/>
+    </net>
+    <net code="37" name="PA2">
+      <node ref="U1" pin="6" pinfunction="OSC_OUT/PA2" pintype="input"/>
+    </net>
+    <net code="38" name="SWIO">
+      <node ref="U1" pin="18" pinfunction="PD1" pintype="bidirectional"/>
+    </net>
+  </nets>
+</export>
